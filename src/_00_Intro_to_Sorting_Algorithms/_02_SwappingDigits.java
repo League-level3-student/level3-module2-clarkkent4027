@@ -29,10 +29,9 @@ class _02_SwappingDigits {
 	// *Hint* it helps to sort it first.
 	// *Double Hint* Use the method you already wrote in step 2 to sort it
 	public static int findMiddle(int[] arr) {
-		sortIntArray(arr);
-				
+		sortIntArray(arr);		
 		int l = arr.length;
-		arr[l/2] = 0;
-		return 0;
+	int m = arr[l/2]; 
+		return m;
 	}
 }
