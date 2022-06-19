@@ -20,7 +20,7 @@ public class _02_BinarySearch {
 
 			// 3. create an integer called mid and set it equal
 			// to the half way point between start and end
-			int mid = start + end / 2;
+			int mid = (start + end) / 2;
 			// 4. if the array element at mid is equal to value
 			// then return mid
 			if (array[mid] == value) {
@@ -31,7 +31,7 @@ public class _02_BinarySearch {
 			// binarySearch method. Pass in start and mid - 1
 			// for the end variable.
 			if (array[mid] > value) {
-				int mid2 = binarySearch(array, start, end, value);
+				int mid2 = binarySearch(array, start, mid-1, value);
 				return mid2;
 			}
 			// 6. return the value returned from a call to the binarySearch
