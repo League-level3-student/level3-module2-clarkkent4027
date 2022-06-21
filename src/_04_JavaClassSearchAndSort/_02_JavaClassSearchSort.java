@@ -22,15 +22,19 @@ public class _02_JavaClassSearchSort {
 
 	public static Boolean arraySearch(char[] arr, char key) {
 		Arrays.sort(arr);
-		Arrays.binarySearch(arr, key);
-		if (key < 0) {
+	int index =	Arrays.binarySearch(arr, key);
+		if (index < 0) {
 			return false;
 		}
 		return true;
 	}
 
 	public static Boolean listSearch(List<Character> list, Character key) {
-Collections.sort(list);
-		return null;
+		Collections.sort(list);
+		int index = Collections.binarySearch(list, key);
+		if (index < 0) {
+			return false;
+		}
+		return true;
 	}
 }
